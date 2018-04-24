@@ -10,12 +10,19 @@
 <body>
     <div class="map"></div>
     <div class="controls">
-        <button class="btn">Buscar</button>
+        <div class="controls-btn">
+            <button class="btn">Buscar</button>
+        </div>
+        <div class="controls-input">
+            <label for="radius">Increase or decrease your radius:</label>
+            <input class='radius' type="number" step="100" min="100" max="3000" placeholder="100">
+        </div>
     </div>
     <script>
         const CLIENT_ID="{CLIENT_ID}";
         const CLIENT_KEY="{CLIENT_KEY}";
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/5.5.10/Rx.min.js"></script>
     <script src="main.js"></script>
     <script async defer
     src="//maps.googleapis.com/maps/api/js?key=AIzaSyBH2arerH_5RPavdumhor9-032-Uik5haw&callback=initMap">
