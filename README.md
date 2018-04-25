@@ -1,4 +1,4 @@
-#Food Findr
+# Food Findr
 
 This is a small demo for a web app that uses Google Map's API and Foursquare's.
 
