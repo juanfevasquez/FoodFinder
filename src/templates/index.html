@@ -5,25 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Nanum+Gothic|Sriracha">
+    <link rel="stylesheet" href="css/map-icons.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div class="map"></div>
-    <div class="controls">
-        <div class="controls-btn">
-            <button class="btn">Buscar</button>
-        </div>
-        <div class="controls-input">
-            <label for="radius">Increase or decrease your radius:</label>
-            <input class='radius' type="number" step="100" min="100" max="3000" placeholder="100">
+    <header class="Header">
+        <h1 class="Header_title">FoodFindr</h1>
+        <p class="Header_author">by: <span class="Header_author--italic">@juanfevasquez</span></p>
+    </header>
+    <div class="Map">
+        <div class="Map_wrapper"></div>
+        <div class="Map_controls">
+            <div class="Map_input">
+                <label for="radius"><span class="map-icon map-icon-crosshairs"></span> Find food in radius:</label>
+                <input class="Map_radius" id="radius" type="number" step="100" min="100" max="5000" placeholder="Increases every 100mts">
+            </div>
         </div>
     </div>
     <script>
         const CLIENT_ID="{CLIENT_ID}";
         const CLIENT_KEY="{CLIENT_KEY}";
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/5.5.10/Rx.min.js"></script>
-    <script src="main.js"></script>
+    <script src="js/map-icons.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/rxjs/5.5.10/Rx.min.js"></script>
+    <script src="js/main.js"></script>
     <script async defer
     src="//maps.googleapis.com/maps/api/js?key=AIzaSyBH2arerH_5RPavdumhor9-032-Uik5haw&callback=initMap">
     </script>
