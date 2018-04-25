@@ -30,10 +30,15 @@ In the root folder of this project create a file named config.json.  Inside of i
 }
 ```
 
-4) Get your Foursquare developer secret user and password and paste them in CLIENT_ID and CLIENT_KEY respectively.
+4) Get your [Foursquare developer](https://developer.foursquare.com/) secret user and password and paste them in CLIENT_ID and CLIENT_KEY respectively.
 
-5) To start the app run the following command:
+5) To start the app in development mode run the following command:
 ```
 npm run develop
+```
+
+6) If you just want to run the app:
+```
+npm start
 ```
 
