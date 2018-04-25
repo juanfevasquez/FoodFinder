@@ -13,5 +13,8 @@
   "license": "ISC",
   "devDependencies": {
     "forever": "^0.15.3"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
   }
 }
