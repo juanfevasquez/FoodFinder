@@ -1,5 +1,8 @@
 
 (function () {
+    window.onload = function() {
+        document.body.classList.add('isLoaded');
+    }
 
     if (!window.foodStore) {
         window.foodStore = {};
@@ -8,6 +11,7 @@
     }
 
     const radius = document.querySelector('.Map_radius');
+    const loader = document.querySelector('.Map_loader');
 
     Rx.Observable.fromEvent(radius, 'input')
         .debounceTime(500)
@@ -126,7 +130,14 @@
             });
         }
 
+        google.maps.event.addListenerOnce(window.foodStore.map, 'tilesloaded', function() {
+            loader.style.opacity = 0;
+            setTimeout(() => {
+                loader.style.display = 'none';
+            }, 1500);
+        });
     }
+
 
 })();
 
