@@ -11,11 +11,23 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <div class="Loader">
+        <div class="Loader_item"></div>
+
+        <div class="Loader_section Loader_section--left"></div>
+        <div class="Loader_section Loader_section--right"></div>
+    </div>
     <header class="Header">
         <h1 class="Header_title">FoodFindr</h1>
         <p class="Header_author">by: <span class="Header_author--italic">@juanfevasquez</span></p>
     </header>
     <div class="Map">
+        <div class="Map_loader">
+            <div class="Map_loaderContent">
+                Looking for food near you...
+                <span class="Map_loaderIcon map-icon map-icon-food"></span>
+            </div>
+        </div>       
         <div class="Map_wrapper"></div>
         <div class="Map_controls">
             <div class="Map_input">
